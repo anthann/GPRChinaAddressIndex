@@ -1,0 +1,6 @@
+framework module Pods_GPRChinaAddressIndex_Example {
+  umbrella header "Pods-GPRChinaAddressIndex_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

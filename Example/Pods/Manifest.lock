@@ -1,0 +1,19 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GPRChinaAddressIndex (0.1.0):
+    - FMDB (= 2.6.2)
+
+DEPENDENCIES:
+  - GPRChinaAddressIndex (from `../`)
+
+EXTERNAL SOURCES:
+  GPRChinaAddressIndex:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GPRChinaAddressIndex: a977a144143755fc8c9d666797d1d5d61f2af579
+
+COCOAPODS: 0.39.0

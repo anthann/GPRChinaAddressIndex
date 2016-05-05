@@ -1,0 +1,29 @@
+{
+  "name": "GPRChinaAddressIndex",
+  "version": "0.1.0",
+  "summary": "A short description of GPRChinaAddressIndex.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GPRChinaAddressIndex",
+  "license": "MIT",
+  "authors": {
+    "anthann": "72115165g@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GPRChinaAddressIndex.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "GPRChinaAddressIndex/Classes/**/*",
+  "resource_bundles": {
+    "GPRChinaAddressIndex": [
+      "GPRChinaAddressIndex/Assets/china_address.db"
+    ]
+  },
+  "dependencies": {
+    "FMDB": [
+      "2.6.2"
+    ]
+  }
+}

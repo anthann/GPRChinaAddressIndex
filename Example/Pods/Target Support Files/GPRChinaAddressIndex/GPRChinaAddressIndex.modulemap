@@ -1,0 +1,6 @@
+framework module GPRChinaAddressIndex {
+  umbrella header "GPRChinaAddressIndex-umbrella.h"
+
+  export *
+  module * { export * }
+}

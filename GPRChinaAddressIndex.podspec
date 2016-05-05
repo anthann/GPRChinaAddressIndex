@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/GPRChinaAddressIndex"
+  s.homepage         = "https://github.com/anthann/GPRChinaAddressIndex"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "anthann" => "72115165g@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/GPRChinaAddressIndex.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/anthann/GPRChinaAddressIndex.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'GPRChinaAddressIndex/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'GPRChinaAddressIndex' => ['GPRChinaAddressIndex/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'GPRChinaAddressIndex' => ['GPRChinaAddressIndex/Assets/china_address.db']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FMDB', '2.6.2'
 end
