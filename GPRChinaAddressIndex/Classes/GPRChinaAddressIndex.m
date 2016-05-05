@@ -30,7 +30,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"china_address" ofType:@"db"];
+        NSBundle *podBundle = [NSBundle bundleForClass:self.class];
+        NSURL *bundleURL = [podBundle URLForResource:@"GPRChinaAddressIndex" withExtension:@"bundle"];
+        NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
+        NSString *path = [resourceBundle pathForResource:@"china_address" ofType:@"db"];
         _queue = [[FMDatabaseQueue alloc] initWithPath:path];
     }
     return self;

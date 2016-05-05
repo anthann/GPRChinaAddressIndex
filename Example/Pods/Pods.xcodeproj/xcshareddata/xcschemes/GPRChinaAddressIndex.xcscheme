@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AF7325F18695A094253B8C60'
+               BlueprintIdentifier = 'AA150BE05B512A4E9EF7D515'
                BlueprintName = 'GPRChinaAddressIndex'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'GPRChinaAddressIndex.framework'>

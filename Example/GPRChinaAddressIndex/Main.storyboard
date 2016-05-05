@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,22 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6S-hW-Q30">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W6S-hW-Q30" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="n3k-x8-JZu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W6S-hW-Q30" secondAttribute="trailing" constant="-20" id="rVv-Se-Clx"/>
+                            <constraint firstItem="W6S-hW-Q30" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="t2D-Jt-Q0s"/>
+                            <constraint firstItem="W6S-hW-Q30" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="xKF-kT-ECm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="W6S-hW-Q30" id="xDk-rP-dMb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
