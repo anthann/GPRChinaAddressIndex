@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GPRChinaAddressIndex_Example', :exclusive => true do
+  pod 'GPRChinaAddressIndex', :path => '../'
+end
+
+target 'GPRChinaAddressIndex_Tests', :exclusive => true do
+  pod 'GPRChinaAddressIndex', :path => '../'
+
+  
+end
